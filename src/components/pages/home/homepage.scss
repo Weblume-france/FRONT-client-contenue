@@ -1,0 +1,54 @@
+.home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .mobile-message {
+    & > h1,
+    p {
+      text-align: center;
+      margin: 5%;
+      font-size: 1.5rem;
+    }
+    & > p {
+      font-size: 1.3rem;
+    }
+    .mobile-anim {
+      border-radius: 50px;
+    }
+  }
+
+  .animate-home,
+  .info-co {
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  }
+
+  .info-co {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > h1 {
+      font-size: 2rem;
+    }
+    & > img {
+      height: 100px;
+    }
+  }
+
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .animate-home {
+    height: 50vh;
+  }
+}
